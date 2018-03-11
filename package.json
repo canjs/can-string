@@ -1,6 +1,6 @@
 {
   "name": "can-string",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "String helpers",
   "homepage": "http://canjs.com",
   "repository": {
@@ -45,9 +45,7 @@
       "steal-stache"
     ]
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "jshint": "^2.9.1",
     "steal": "^1.6.5",
