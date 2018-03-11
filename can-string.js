@@ -16,7 +16,6 @@ var strUndHash = /_|-/,
 	strWords = /([A-Z]+)([A-Z][a-z])/g,
 	strLowUp = /([a-z\d])([A-Z])/g,
 	strDash = /([a-z\d])([A-Z])/g,
-	strReplacer = /\{([^\}]+)\}/g,
 	strQuote = /"/g,
 	strSingleQuote = /'/g,
 	strHyphenMatch = /-+(.)?/g,
@@ -125,13 +124,6 @@ var string = {
 			.replace(strDash, '_')
 			.toLowerCase();
 	},
-
-	/**
-	 * @property {RegExp} can-string.strReplacer strReplacer
-	 *
-	 * The regex used to find replacement sections in [can-string.sub sub]
-	 */
-	replacer: strReplacer,
 	/**
 	 * @property {RegExp} can-string.strUndHash strUndHash
 	 *
