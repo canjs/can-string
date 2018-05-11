@@ -4,13 +4,6 @@
 // Several of the methods in this plugin use code adapted from Prototype
 // Prototype JavaScript framework, version 1.6.0.1.
 // © 2005-2007 Sam Stephenson
-/**
- * @module {{}} can-string
- * @parent can-js-utilities
- * @collection can-infrastructure
- *
- * @description  String utilities used by CanJS libraries
- */
 var strUndHash = /_|-/,
 	strColons = /\=\=/,
 	strWords = /([A-Z]+)([A-Z][a-z])/g,

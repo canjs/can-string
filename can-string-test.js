@@ -3,7 +3,7 @@
 var QUnit = require('steal-qunit');
 var string = require('./can-string');
 
-QUnit.module("can-util/js/string");
+QUnit.module("can-string");
 
 
 QUnit.test('String.underscore', function (assert) {

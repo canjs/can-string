@@ -1,5 +1,21 @@
-@page can-string
+@module {Object} can-string
+@parent can-js-utilities
+@collection can-infrastructure
 
-# can-string
+@description  String utilities.
 
-String helpers
+@type {Object}
+
+`can-string` exports an object with the following methods:
+
+```js
+import string from "can-string";
+// or
+import {string} from "can";
+
+string.camelize("foo-bar")) //-> "fooBar"
+string.capitalize("foo")    //-> "Foo"
+string.esc("<div>foo</div>")//-> "&lt;div&gt;foo&lt;/div&gt;"
+string.hyphenate("fooBar")  //-> "foo-bar"
+string.underscore("fooBar") //-> "foo_bar"
+```
