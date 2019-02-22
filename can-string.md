@@ -1,6 +1,7 @@
 @module {Object} can-string
 @parent can-js-utilities
 @collection can-infrastructure
+@package ./package.json
 
 @description  String utilities.
 
