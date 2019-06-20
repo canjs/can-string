@@ -98,6 +98,22 @@ var string = {
 			});
 	},
 	/**
+	 * @function can-string.pascalize pascalize
+	 * @signature `string.pascalize(s)`
+	 * @param  {String} str   the string in hyphen case | camelCase
+	 * @return {String}       the supplied string with hyphens | camelCase converted to PascalCase
+	 *
+	 * ```js
+	 * var string = require("can-string");
+	 *
+	 * console.log(string.pascalize("fooBar")); // -> "FooBar"
+	 * console.log(string.pascalize("baz-bar")); // -> "BazBar"
+	 * ```
+	 */
+	pascalize: function (str) {
+		return string.capitalize(string.camelize(str));
+	},
+	/**
 	 * @function can-string.underscore underscore
 	 * @signature `string.underscore(s)`
 	 * @param  {String} str   a string in camelCase

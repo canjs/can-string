@@ -54,3 +54,20 @@ QUnit.test('string.hyphenate', function (assert) {
 	text = string.hyphenate('dataNode');
 	assert.equal(text, 'data-node');
 });
+
+QUnit.test('string.pascalize', function (assert) {
+	var text = string.pascalize(0);
+	assert.equal(text, '0', '0 value properly rendered');
+	text = string.pascalize(null);
+	assert.equal(text, '', 'null value returns empty string');
+	text = string.pascalize();
+	assert.equal(text, '', 'undefined returns empty string');
+	text = string.pascalize(NaN);
+	assert.equal(text, '', 'NaN returns empty string');
+	text = string.pascalize('baz-bar');
+	assert.equal(text, 'BazBar');
+	text = string.pascalize('barNode');
+	assert.equal(text, 'BarNode');
+	text = string.pascalize('bar');
+	assert.equal(text, 'Bar');
+});

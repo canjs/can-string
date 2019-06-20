@@ -19,4 +19,5 @@ string.capitalize("foo")    //-> "Foo"
 string.esc("<div>foo</div>")//-> "&lt;div&gt;foo&lt;/div&gt;"
 string.hyphenate("fooBar")  //-> "foo-bar"
 string.underscore("fooBar") //-> "foo_bar"
+string.pascalize("foo-bar") //-> "FooBar"
 ```
